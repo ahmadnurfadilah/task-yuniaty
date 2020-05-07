@@ -23,6 +23,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// Ini komentar
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/tweet', 'TweetController@index')->middleware('auth');
